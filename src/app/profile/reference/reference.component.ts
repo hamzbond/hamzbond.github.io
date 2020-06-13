@@ -9,7 +9,7 @@ export class ReferenceComponent implements OnInit {
 
   constructor() { }
 
-  ngOnInit(): void {
+  ngOnInit() {
   }
 
 }
