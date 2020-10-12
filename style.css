@@ -1,0 +1,62 @@
+body { 
+    background-color: rgb(177, 230, 230);
+}
+
+.bgWhite {
+    background-color: white;
+    padding-bottom: 5px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+#pp {
+    width: 100px;
+    height: 100px;
+    border-radius: 25px;
+}
+
+.header {
+    min-height: 50px;
+    text-align: center;
+    background-color: red;
+    background-size: cover;
+    background-repeat: round;
+    position: relative;
+}
+
+.sidebar {
+    /* background: rgb(80, 235, 80); */
+    float: left;
+    min-height: 500px;
+    width: 20%;
+    font-size: 13pt;
+    text-align: center;
+    padding-top: 20px;
+}
+
+.sidebar ul {
+    text-align: left;
+    justify-content: left;
+}
+
+.content {
+    background-color: rgb(220, 226, 226);
+    min-height: 500px;
+    padding-top: 20px;
+    overflow: auto;
+    color: black;
+    padding: 15px;
+    margin: auto;
+}
+
+.footer {
+    background-color: rgb(57, 195, 219);
+    min-height: 50px;
+}
+
+.footer .contactMe {
+    width: 25%;
+    padding: 5px;
+}
