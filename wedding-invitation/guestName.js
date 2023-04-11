@@ -4,10 +4,11 @@ const guestName = urlParam.get('to')
 
 var guestList = [
     'hamzah',
-    'difa'
+    'difa',
+    'Achmad Hamzah'
 ]
 guestList.forEach(element => {
-    if(element == guestName) {
+    if(element.toLowerCase() == guestName.toLowerCase()) {
         document.getElementById('wdp-name').innerText = guestName
     }
 })
