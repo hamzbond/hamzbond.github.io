@@ -1,2 +1,2 @@
-# KhadijaKhamis.github.io
+# hamzbond.github.io
 Personal Portofolio
