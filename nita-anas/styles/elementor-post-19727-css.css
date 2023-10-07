@@ -1,0 +1,39 @@
+.elementor-19727 .elementor-element.elementor-element-5909ae50 .elementor-button {
+    font-family: "Times New Roman", Sans-serif;
+    font-weight: 500;
+    fill: #FFFFFF;
+    color: #FFFFFF;
+    background-color: #333333;
+    border-radius: 50px 50px 50px 50px;
+    box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.5);
+}
+
+#elementor-popup-modal-19727 .dialog-message {
+    width: 400px;
+    height: auto;
+}
+
+#elementor-popup-modal-19727 {
+    justify-content: center;
+    align-items: center;
+    pointer-events: all;
+    background-color: rgba(0, 0, 0, .8);
+}
+
+#elementor-popup-modal-19727 .dialog-widget-content {
+    box-shadow: 2px 8px 23px 3px rgba(0, 0, 0, 0.2);
+}
+
+@media(max-width:767px) {
+    .elementor-19727 .elementor-element.elementor-element-6b1f4af5>.elementor-column-wrap>.elementor-widget-wrap>.elementor-widget:not(.elementor-widget__width-auto):not(.elementor-widget__width-initial):not(:last-child):not(.elementor-absolute) {
+        margin-bottom: 5px;
+    }
+
+    .elementor-19727 .elementor-element.elementor-element-5909ae50 .elementor-button {
+        padding: 6px 50px 6px 50px;
+    }
+
+    #elementor-popup-modal-19727 .dialog-message {
+        width: 90vw;
+    }
+}
