@@ -1424,9 +1424,10 @@
 
 .elementor-20194 .elementor-element.elementor-element-792f4e3c:not(.elementor-motion-effects-element-type-background),
 .elementor-20194 .elementor-element.elementor-element-792f4e3c>.elementor-motion-effects-container>.elementor-motion-effects-layer {
-    background-image: url("galery47.jpg");
+    background-image: url("galery51.jpg");
     background-position: center center;
     background-size: cover;
+    max-height: 2400px;
 }
 
 .elementor-20194 .elementor-element.elementor-element-792f4e3c>.elementor-background-overlay {
