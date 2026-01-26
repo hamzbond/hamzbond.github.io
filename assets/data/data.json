@@ -1,0 +1,772 @@
+{
+  "profile": {
+    "name": "Achmad Hamzah",
+    "title": "Full Stack Odoo Developer",
+    "subtitle": "Passionate Odoo Developer & Creative Problem Solver",
+    "location": "Gresik, East Java, Indonesia",
+    "email": "hamzbond@gmail.com",
+    "phone": "+62 813 3569 5170",
+    "avatar": "assets/images/profile/profile.jpg",
+    "bio": "Odoo Developer with hands-on experience building custom modules, improving workflows, and supporting dynamic business environments. Focused on delivering clean solutions that are easy to use and simple to maintain.",
+    "availability": "Available for new projects",
+    "experience_years": "5+",
+    "work_mode": "Remote / On-site",
+    "interests": [
+      "Odoo ERP",
+      "Open Source",
+      "Workflow Automation",
+      "Disaster Recovery"
+    ],
+    "social": {
+      "github": "https://github.com/hamzbond",
+      "linkedin": "https://www.linkedin.com/in/achmad-hamzah/",
+      "instagram": "https://www.instagram.com/hamzbond/"
+    },
+    "languages": [
+      {
+        "name": "Indonesian",
+        "level": "Native"
+      },
+      {
+        "name": "English",
+        "level": "Fluent"
+      }
+    ]
+  },
+  "skills": {
+    "technical": [
+      {
+        "category": "Frontend Development",
+        "items": [
+          "Odoo",
+          "React.js",
+          "Vue.js",
+          "TypeScript",
+          "Tailwind CSS",
+          "Next.js"
+        ],
+        "icon": "💻"
+      },
+      {
+        "category": "Backend Development",
+        "items": [
+          "Python",
+          "Node.js",
+          "Express.js"
+        ],
+        "icon": "⚡"
+      },
+      {
+        "category": "Mobile Development",
+        "items": [
+          "Flutter",
+          "Dart"
+        ],
+        "icon": "📱"
+      },
+      {
+        "category": "IoT & Hardware",
+        "items": [
+          "Arduino",
+          "C/C++",
+          "Twilio API",
+          "Telegram Bot API"
+        ],
+        "icon": "🤖"
+      },
+      {
+        "category": "Database & Tools",
+        "items": [
+          "PostgreSQL",
+          "MySQL",
+          "Docker",
+          "Git",
+          "Nginx",
+          "Postman"
+        ],
+        "icon": "🛠️"
+      }
+    ],
+    "soft": [
+      "Odoo Development",
+      "Business Process Analysis",
+      "System Architecture",
+      "Disaster Recovery",
+      "Project Management",
+      "Creative Thinking",
+      "Communication",
+      "Adaptability"
+    ]
+  },
+  "experience": [
+    {
+      "company": "PT. Bina Megah Indowood",
+      "position_en": "Odoo Developer",
+      "position_id": "Odoo Developer",
+      "period_en": "July 2025 - Present",
+      "period_id": "Juli 2025 - Sekarang",
+      "location_en": "Gresik, East Java, Indonesia",
+      "location_id": "Gresik, Jawa Timur, Indonesia",
+      "description_en": "Responsible for developing and maintaining Odoo systems for various company business needs.",
+      "description_id": "Bertanggung jawab dalam pengembangan dan pemeliharaan sistem Odoo untuk berbagai kebutuhan bisnis perusahaan.",
+      "achievements_en": [
+        "Architected and executed a full system recovery and secure cloud migration post-ransomware attack, designing a new multi-layered security infrastructure that restored 100% operational capacity",
+        "Re-engineered a legacy Odoo architecture by eliminating code duplication and standardizing modules. Established modern development practices by introducing Git, Docker, and comprehensive technical documentation to ensure future scalability and maintainability",
+        "Redesigned the annual stock opname process by shifting from stock transfer to inventory adjustment method. Reducing process time by 50% (from 2 weeks to 1) and dramatically improving data accuracy",
+        "Optimized end-to-end system performance by analyzing and providing recommendations for client-side devices and network infrastructure, ensuring stability from the server to the end-user"
+      ],
+      "achievements_id": [
+        "Merancang dan mengeksekusi pemulihan sistem penuh dan migrasi cloud yang aman setelah serangan ransomware, merancang infrastruktur keamanan multi-layer baru yang memulihkan 100% kapasitas operasional",
+        "Merekayasa ulang arsitektur Odoo legacy dengan menghilangkan duplikasi kode dan standardisasi modul. Membangun praktik pengembangan modern dengan memperkenalkan Git, Docker, dan dokumentasi teknis yang komprehensif untuk memastikan skalabilitas dan pemeliharaan di masa depan",
+        "Mendesain ulang proses stok opname tahunan dengan beralih dari metode transfer stok ke penyesuaian inventaris. Mengurangi waktu proses sebesar 50% (dari 2 minggu menjadi 1 minggu) dan meningkatkan akurasi data secara signifikan",
+        "Mengoptimalkan performa sistem end-to-end dengan menganalisis dan memberikan rekomendasi untuk perangkat sisi klien dan infrastruktur jaringan, memastikan stabilitas dari server hingga pengguna akhir"
+      ]
+    },
+    {
+      "company": "PT. Nurosoft Consulting",
+      "position_en": "Project Manager",
+      "position_id": "Project Manager",
+      "period_en": "February 2025 - July 2025",
+      "period_id": "Februari 2025 - Juli 2025",
+      "location_en": "Surabaya, East Java, Indonesia",
+      "location_id": "Surabaya, Jawa Timur, Indonesia",
+      "description_en": "Responsible for managing Odoo projects for various company business needs.",
+      "description_id": "Bertanggung jawab dalam mengelola proyek Odoo untuk berbagai kebutuhan bisnis perusahaan.",
+      "achievements_en": [],
+      "achievements_id": []
+    },
+    {
+      "company": "Freelance",
+      "position_en": "Freelance Odoo Developer",
+      "position_id": "Freelance Odoo Developer",
+      "period_en": "July 2023 - Present",
+      "period_id": "Juli 2023 - Sekarang",
+      "location_en": "Remote",
+      "location_id": "Remote",
+      "description_en": "Responsible for developing and maintaining Odoo systems for various company business needs.",
+      "description_id": "Bertanggung jawab dalam pengembangan dan pemeliharaan sistem Odoo untuk berbagai kebutuhan bisnis perusahaan.",
+      "achievements_en": [
+        "Developed custom Odoo modules for various business needs like inventory management, sales management, purchase management, accounting management, HR management, etc.",
+        "Integrating Odoo with 3rd Party Applications like POS, Payment Gateway, etc."
+      ],
+      "achievements_id": [
+        "Mengembangkan modul Odoo kustom untuk berbagai kebutuhan bisnis seperti manajemen inventaris, manajemen penjualan, manajemen pembelian, manajemen akuntansi, manajemen SDM, dll.",
+        "Mengintegrasikan Odoo dengan Aplikasi Pihak Ketiga (POS, Payment Gateway, dll.)"
+      ]
+    },
+    {
+      "company": "PT. Nurosoft Consulting",
+      "position_en": "Odoo Business Analyst & Technical Trainer",
+      "position_id": "Odoo Business Analyst & Technical Trainer",
+      "period_en": "May 2021 - February 2025",
+      "period_id": "Mei 2021 - Februari 2025",
+      "location_en": "Surabaya, East Java, Indonesia",
+      "location_id": "Surabaya, Jawa Timur, Indonesia",
+      "description_en": "Responsible for analyzing business needs and providing Odoo solutions for various company business needs.",
+      "description_id": "Bertanggung jawab dalam menganalisis kebutuhan bisnis dan memberikan solusi Odoo untuk berbagai kebutuhan bisnis perusahaan.",
+      "achievements_en": [
+        "Analyzed business needs and provided Odoo solutions for various company business needs.",
+        "Developed custom Odoo modules for various business needs like inventory management, sales management, purchase management, accounting management, HR management, etc.",
+        "Integrating Odoo with 3rd Party Applications like POS, Payment Gateway, etc.",
+        "Testing and ensuring the quality of Odoo modules developed.",
+        "Providing training to Odoo users.",
+        "Conduct Kickoff Meeting and Gathering Requirements",
+        "Deliver Odoo Technical Training"
+      ],
+      "achievements_id": [
+        "Menganalisis kebutuhan bisnis dan memberikan solusi Odoo untuk berbagai kebutuhan bisnis perusahaan.",
+        "Mengembangkan modul Odoo kustom untuk berbagai kebutuhan bisnis seperti manajemen inventaris, manajemen penjualan, manajemen pembelian, manajemen akuntansi, manajemen SDM, dll.",
+        "Mengintegrasikan Odoo dengan Aplikasi Pihak Ketiga (POS, Payment Gateway, dll.)",
+        "Menguji dan memastikan kualitas modul Odoo yang dikembangkan.",
+        "Memberikan pelatihan kepada pengguna Odoo.",
+        "Melakukan Kickoff Meeting dan Gathering Requirements",
+        "Memberikan Odoo Technical Training"
+      ]
+    },
+    {
+      "company": "PT. Mitra Informatika",
+      "position_en": "Database Engineer",
+      "position_id": "Database Engineer",
+      "period_en": "December 2019 - February 2020",
+      "period_id": "Desember 2019 - Februari 2020",
+      "location_en": "Surabaya, East Java, Indonesia",
+      "location_id": "Surabaya, Jawa Timur, Indonesia",
+      "description_en": "Responsible for database management, query optimization, and performance monitoring.",
+      "description_id": "Bertanggung jawab dalam manajemen database, optimasi query, dan pemantauan performa.",
+      "achievements_en": [
+        "Optimized database queries to improve performance.",
+        "Performed regular database maintenance and monitoring.",
+        "Ensured data integrity and security."
+      ],
+      "achievements_id": [
+        "Mengoptimalkan query database untuk meningkatkan performa.",
+        "Melakukan pemeliharaan dan pemantauan database secara rutin.",
+        "Memastikan integritas dan keamanan data."
+      ]
+    }
+  ],
+  "education": [
+    {
+      "institution_en": "Indonesia Open University",
+      "institution_id": "Universitas Terbuka Indonesia",
+      "degree_en": "Bachelor of Informatics System",
+      "degree_id": "S1 Sistem Informatika",
+      "period_en": "2024 - Present",
+      "period_id": "2024 - Sekarang",
+      "gpa": "-/4.00",
+      "achievements_en": [],
+      "achievements_id": []
+    },
+    {
+      "institution_en": "Telkom University Bandung",
+      "institution_id": "Universitas Telkom Bandung",
+      "degree_en": "Diploma of Computer Technology",
+      "degree_id": "D3 Teknologi Komputer",
+      "period_en": "2016 - 2019",
+      "period_id": "2016 - 2019",
+      "gpa": "3.72/4.00",
+      "achievements_en": [
+        "Graduated with Cum Laude",
+        "Member of Student Technology Association",
+        "Assistant Practicum from semester 3 to 5"
+      ],
+      "achievements_id": [
+        "Lulus dengan predikat Cum Laude",
+        "Anggota Himpunan Mahasiswa Teknologi Komputer",
+        "Asisten Praktikum semester 3 - 5"
+      ]
+    }
+  ],
+  "portfolio": [
+    {
+      "id": "samimawon-chat-gendeng",
+      "title_en": "Samimawon Chat Gendeng",
+      "title_id": "Samimawon Chat Gendeng",
+      "description_en": "A simple chatbot application inspired by 'SimiSimi' using Flutter. It features an interactive interface with 'Samimawon' the King of the Jungle.",
+      "description_id": "Aplikasi chatbot sederhana yang terinspirasi oleh 'SimiSimi' menggunakan Flutter. Menampilkan antarmuka interaktif dengan 'Samimawon' sang Raja Hutan.",
+      "longDescription_en": "A Flutter-based chatbot application that provides a fun and interactive chat experience. It fetches responses from a dedicated API to simulate conversations with the character 'Samimawon'. The app focuses on a clean UI and smooth user experience.",
+      "longDescription_id": "Aplikasi chatbot berbasis Flutter yang memberikan pengalaman obrolan yang menyenangkan dan interaktif. Aplikasi ini mengambil respons dari API khusus untuk mensimulasikan percakapan dengan karakter 'Samimawon'. Aplikasi ini berfokus pada UI yang bersih dan pengalaman pengguna yang lancar.",
+      "features_en": [
+        "Interactive chatbot interface",
+        "Real-time API responses",
+        "Clean and simple UI layout using Grouped List"
+      ],
+      "features_id": [
+        "Antarmuka chatbot interaktif",
+        "Respons API real-time",
+        "Tata letak UI yang bersih dan sederhana menggunakan Grouped List"
+      ],
+      "technologies": [
+        "Flutter",
+        "Dart",
+        "HTTP API",
+        "Grouped List"
+      ],
+      "image": "assets/images/portfolio/samimawon_chat_gendeng_mockup.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/samimawon_chat_gendeng",
+      "featured": true
+    },
+    {
+      "id": "partner-email-validation",
+      "title_en": "Odoo Partner Email Validation",
+      "title_id": "Validasi Email Partner Odoo",
+      "description_en": "Advanced Odoo module to ensure contact data quality by validating email addresses via DNS/SMTP.",
+      "description_id": "Modul Odoo canggih untuk memastikan kualitas data kontak dengan validasi alamat email melalui DNS/SMTP.",
+      "longDescription_en": "A field-level validation module for Odoo that goes beyond basic format checks. It utilizes DNS and SMTP verification to ensure that email addresses provided are active and reachable, significantly reducing bounce rates for email campaigns.",
+      "longDescription_id": "Modul validasi tingkat field untuk Odoo yang melampaui pengecekan format dasar. Modul ini menggunakan verifikasi DNS dan SMTP untuk memastikan bahwa alamat email yang diberikan aktif dan dapat dihubungi, secara signifikan mengurangi tingkat pentalan untuk kampanye email.",
+      "features_en": [
+        "Real-time email format validation",
+        "DNS/SMTP record checking",
+        "Integration with standard Odoo Contacts",
+        "Configurable validation strictness"
+      ],
+      "features_id": [
+        "Validasi format email real-time",
+        "Pengecekan record DNS/SMTP",
+        "Integrasi dengan Kontak Odoo standar",
+        "Ketajaman validasi yang dapat dikonfigurasi"
+      ],
+      "technologies": [
+        "Odoo 14.0",
+        "Python",
+        "py3DNS",
+        "validate_email"
+      ],
+      "image": "assets/images/portfolio/partner_email_validation.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/partner_email_validation",
+      "featured": false
+    },
+    {
+      "id": "odoo-apps-search",
+      "title_en": "Odoo Apps Search Enhancement",
+      "title_id": "Penyempurnaan Pencarian Aplikasi Odoo",
+      "description_en": "Professional search and filtering tools for the Odoo Apps dashboard.",
+      "description_id": "Alat pencarian dan pemfilteran profesional untuk dashboard Aplikasi Odoo.",
+      "longDescription_en": "This module enhances the standard Odoo Apps dashboard by adding critical search parameters. Users can filter modules based on Author, Website, and whether they contain demo data, making it easier to manage large sets of Odoo modules.",
+      "longDescription_id": "Modul ini menyempurnakan dashboard Aplikasi Odoo standar dengan menambahkan parameter pencarian penting. Pengguna dapat memfilter modul berdasarkan Penulis, Situs Web, dan apakah modul tersebut berisi data demo, sehingga memudahkan pengelolaan kumpulan modul Odoo yang besar.",
+      "features_en": [
+        "Search by Author and Website",
+        "Filter by Demo Data existence",
+        "Dynamic categorization and grouping",
+        "Sleek UI integration"
+      ],
+      "features_id": [
+        "Pencarian berdasarkan Penulis dan Situs Web",
+        "Filter berdasarkan keberadaan Data Demo",
+        "Kategorisasi dan pengelompokan dinamis",
+        "Integrasi UI yang mulus"
+      ],
+      "technologies": [
+        "Odoo 18.0",
+        "Python",
+        "OWL"
+      ],
+      "image": "assets/images/portfolio/odoo_apps_search.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/odoo_apps_search/tree/18.0",
+      "featured": false
+    },
+    {
+      "id": "web-direct-print",
+      "title_en": "Odoo Web Direct Print",
+      "title_id": "Cetak Langsung Web Odoo",
+      "description_en": "Enable direct printing from Odoo web interface to local printers without PDF downloads.",
+      "description_id": "Aktifkan pencarian langsung dari antarmuka web Odoo ke printer lokal tanpa unduhan PDF.",
+      "longDescription_en": "A utility module designed to streamline operational workflows. It bypasses the browser's PDF preview/download dialogue and sends reports directly to a configured local printer, saving time in high-volume environments like warehouses or finance departments.",
+      "longDescription_id": "Modul utilitas yang dirancang untuk merampingkan alur kerja operasional. Modul ini melewati dialog pratinjau/unduhan PDF browser dan mengirimkan laporan langsung ke printer lokal yang dikonfigurasi, menghemat waktu di lingkungan bervolume tinggi seperti gudang atau departemen keuangan.",
+      "features_en": [
+        "One-click direct printing",
+        "Local printer configuration",
+        "Compatible with QWeb reports",
+        "Workflow optimization"
+      ],
+      "features_id": [
+        "Cetak langsung dengan satu klik",
+        "Konfigurasi printer lokal",
+        "Kompatibel dengan laporan QWeb",
+        "Optimasi alur kerja"
+      ],
+      "technologies": [
+        "Odoo 14.0",
+        "Python",
+        "JavaScript",
+        "QWeb"
+      ],
+      "image": "assets/images/portfolio/web_direct_print.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/web_direct_print/tree/14.0",
+      "featured": true
+    },
+    {
+      "id": "purchase-create-bill",
+      "title_en": "Odoo Purchase Create Bill Lite",
+      "title_id": "Pembuatan Tagihan Pembelian Odoo Lite",
+      "description_en": "Restores the intuitive 'Create Vendor Bill' functionality to newer Odoo versions.",
+      "description_id": "Mengembalikan fungsi 'Buat Tagihan Vendor' yang intuitif ke versi Odoo yang lebih baru.",
+      "longDescription_en": "Designed for Odoo 19, this module restores the streamlined billing process from a Purchase Order. It includes smart validation to ensure billing follows the company's reception policies (Ordered vs Received).",
+      "longDescription_id": "Dirancang untuk Odoo 19, modul ini mengembalikan proses penagihan yang efisien dari Pesanan Pembelian. Ini mencakup validasi cerdas untuk memastikan penagihan mengikuti kebijakan penerimaan perusahaan (Dipesan vs Diterima).",
+      "features_en": [
+        "Restores 'Create Bill' button",
+        "Reception policy validation",
+        "Simplified vendor invoicing",
+        "Enhanced billing accuracy"
+      ],
+      "features_id": [
+        "Mengembalikan tombol 'Buat Tagihan'",
+        "Validasi kebijakan penerimaan",
+        "Penagihan vendor yang disederhanakan",
+        "Peningkatan akurasi penagihan"
+      ],
+      "technologies": [
+        "Odoo 19.0",
+        "Python"
+      ],
+      "image": "assets/images/portfolio/purchase_create_bill.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/purchase_create_bill/tree/19.0",
+      "featured": false
+    },
+    {
+      "id": "dynamic-endpoint",
+      "title_en": "Odoo Dynamic Endpoint",
+      "title_id": "Endpoint Dinamis Odoo",
+      "description_en": "Backend utility for managing API endpoints dynamically within Odoo.",
+      "description_id": "Utilitas backend untuk mengelola endpoint API secara dinamis di dalam Odoo.",
+      "longDescription_en": "A powerful developer tool that allows for the creation and management of RESTful API endpoints directly from the Odoo backend without redeploying code. Ideal for facilitating fast integrations with external systems.",
+      "longDescription_id": "Alat pengembang yang kuat yang memungkinkan pembuatan dan pengelolaan endpoint API RESTful langsung dari backend Odoo tanpa menyebarkan ulang kode. Ideal untuk memfasilitasi integrasi cepat dengan sistem eksternal.",
+      "features_en": [
+        "Dynamic URL generation",
+        "Security token management",
+        "Response format configuration",
+        "Endpoint activity logging"
+      ],
+      "features_id": [
+        "Pembuatan URL dinamis",
+        "Manajemen token keamanan",
+        "Konfigurasi format respons",
+        "Pencatatan aktivitas endpoint"
+      ],
+      "technologies": [
+        "Odoo",
+        "Python",
+        "RestAPI"
+      ],
+      "image": "assets/images/portfolio/dynamic_endpoint.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/dynamic_endpoint",
+      "featured": false
+    },
+    {
+      "id": "arduino-whatsapp",
+      "title_en": "Arduino Whatsapp Alert System",
+      "title_id": "Sistem Peringatan Whatsapp Arduino",
+      "description_en": "IoT solution for sending real-time WhatsApp alerts from Arduino via Twilio.",
+      "description_id": "Solusi IoT untuk mengirimkan peringatan WhatsApp real-time dari Arduino melalui Twilio.",
+      "longDescription_en": "An IoT implementation that bridges Arduino hardware with modern messaging platforms. By using Twilio Webhooks, sensors connected to the Arduino can trigger instant notifications to a WhatsApp number, making it perfect for remote monitors.",
+      "longDescription_id": "Implementasi IoT yang menjembatani perangkat keras Arduino dengan platform perpesanan modern. Dengan menggunakan Twilio Webhooks, sensor yang terhubung ke Arduino dapat memicu pemberitahuan instan ke nomor WhatsApp, menjadikannya sempurna untuk pemantauan jarak jauh.",
+      "features_en": [
+        "Instant WhatsApp notifications",
+        "Twilio Webhook integration",
+        "Sensor-triggered alerts",
+        "Low-latency communication"
+      ],
+      "features_id": [
+        "Pemberitahuan WhatsApp instan",
+        "Integrasi Twilio Webhook",
+        "Peringatan yang dipicu sensor",
+        "Komunikasi latensi rendah"
+      ],
+      "technologies": [
+        "Arduino",
+        "C++",
+        "Twilio API",
+        "ESP8266/ESP32"
+      ],
+      "image": "assets/images/portfolio/arduino_whatsapp.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/Arduino-Send-Whatsapp-Notification-using-Twillio-Webhook",
+      "featured": true
+    },
+    {
+      "id": "arduino-telegram-lib",
+      "title_en": "Arduino Telegram Library",
+      "title_id": "Perpustakaan Telegram Arduino",
+      "description_en": "Lightweight C++ library for integrating Telegram Bot API into Arduino projects.",
+      "description_id": "Perpustakaan C++ ringan untuk mengintegrasikan Telegram Bot API ke dalam proyek Arduino.",
+      "longDescription_en": "A specialized library for Arduino developers that simplifies interactions with the Telegram Bot API. It handles underlying HTTP requests and parsing, allowing users to send messages and receive commands with minimal code on ESP8266 or ESP32 boards.",
+      "longDescription_id": "Perpustakaan khusus untuk pengembang Arduino yang menyederhanakan interaksi dengan Telegram Bot API. Ini menangani permintaan HTTP dan parsing yang mendasarinya, memungkinkan pengguna untuk mengirim pesan dan menerima perintah dengan kode minimal pada papan ESP8266 atau ESP32.",
+      "features_en": [
+        "Compact memory footprint",
+        "Easy message sending",
+        "Supports Bot commands",
+        "JSON parsing integration"
+      ],
+      "features_id": [
+        "Jejak memori yang padat",
+        "Pengiriman pesan yang mudah",
+        "Mendukung perintah Bot",
+        "Integrasi parsing JSON"
+      ],
+      "technologies": [
+        "Arduino",
+        "C++",
+        "Telegram API",
+        "JSON"
+      ],
+      "image": "assets/images/portfolio/arduino_telegram.png",
+      "demoUrl": "",
+      "githubUrl": "https://github.com/hamzbond/Arduino-Telegram-Library",
+      "featured": true
+    }
+  ],
+  "testimonials": [
+    {
+      "name": "Sarah Johnson",
+      "position": "Product Manager",
+      "company": "Tech Innovate Solutions",
+      "text_en": "Hamza is a very talented and professional developer. His problem-solving abilities are extraordinary and he can always be relied upon to complete complex projects.",
+      "text_id": "Hamza adalah pengembang yang sangat berbakat dan profesional. Kemampuan pemecahan masalahnya luar biasa dan dia selalu dapat diandalkan untuk menyelesaikan proyek yang kompleks.",
+      "avatar": "https://via.placeholder.com/80x80/EC4899/FFFFFF?text=SJ"
+    }
+  ],
+  "certificates": [
+    {
+      "name_en": "Learning Fundamental Front-End Web Development",
+      "name_id": "Belajar Fundamental Front-End Web Development",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "JMZVV23N3ZN9",
+      "featured": true,
+      "category": "web"
+    },
+    {
+      "name_en": "Prompt Engineering for Software Developer",
+      "name_id": "Prompt Engineering untuk Software Developer",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "98XWO99R9ZM3",
+      "featured": true,
+      "category": "ai"
+    },
+    {
+      "name_en": "Learning the Basics of Generative AI Usage",
+      "name_id": "Belajar Penggunaan Generative AI",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "MEPJ211EWP3V",
+      "category": "ai"
+    },
+    {
+      "name_en": "Practical AI for Productivity",
+      "name_id": "AI Praktis untuk Produktivitas",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "53XEK880KXRN",
+      "featured": true,
+      "category": "ai"
+    },
+    {
+      "name_en": "Learning the Basics of Project Management",
+      "name_id": "Belajar Dasar Manajemen Proyek",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "81P25YYGNPOY",
+      "category": "programming"
+    },
+    {
+      "name_en": "Learning the Basics of JavaScript Programming",
+      "name_id": "Belajar Dasar Pemrograman JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "JMZVEWYLRPN9",
+      "category": "programming"
+    },
+    {
+      "name_en": "Financial Literacy 101",
+      "name_id": "Literasi Finansial 101",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "2VX35DD1JPYQ",
+      "category": "others"
+    },
+    {
+      "name_en": "Building a Career as a Software Developer",
+      "name_id": "Meniti Karier sebagai Software Developer",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "ERZR2664QPYV",
+      "category": "others"
+    },
+    {
+      "name_en": "Learning the Basics of Web Programming",
+      "name_id": "Belajar Dasar Pemrograman Web",
+      "issuer": "Dicoding Indonesia",
+      "date": "2025",
+      "credentialId": "1OP82EGK2PQK",
+      "category": "web"
+    },
+    {
+      "name_en": "Learning the Basics of Data Visualization",
+      "name_id": "Belajar Dasar Visualisasi Data",
+      "issuer": "Dicoding Indonesia",
+      "date": "2023",
+      "credentialId": "98XWO99K9ZM3",
+      "category": "programming"
+    },
+    {
+      "name_en": "Starting Programming with Python",
+      "name_id": "Memulai Pemrograman dengan Python",
+      "issuer": "Dicoding Indonesia",
+      "date": "2023",
+      "credentialId": "N9ZO2VVERPG5",
+      "category": "programming"
+    },
+    {
+      "name_en": "Learning to Create Web Applications with React",
+      "name_id": "Belajar Membuat Aplikasi Web dengan React",
+      "issuer": "Dicoding Indonesia",
+      "date": "2022",
+      "credentialId": "0LZ05LL3NX65",
+      "featured": true,
+      "category": "web"
+    },
+    {
+      "name_en": "Learning to Create Front-End Web for Beginners",
+      "name_id": "Belajar Membuat Front-End Web untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "date": "2022",
+      "credentialId": "07Z6J115JXQR",
+      "category": "web"
+    },
+    {
+      "name_en": "Learning Fundamental Back-End with JavaScript",
+      "name_id": "Belajar Fundamental Back-End dengan JavaScript",
+      "issuer": "Dicoding Indonesia",
+      "date": "2022",
+      "credentialId": "N9ZO9G7YRXG5",
+      "featured": true,
+      "category": "web"
+    },
+    {
+      "name_en": "Learning the Basics of Git with GitHub",
+      "name_id": "Belajar Dasar Git dengan GitHub",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "GRX5KYD6YZ0M",
+      "category": "programming"
+    },
+    {
+      "name_en": "Learning to Create Flutter Applications for Beginners",
+      "name_id": "Belajar Membuat Aplikasi Flutter untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "JMZV27QW3ZN9",
+      "category": "mobile"
+    },
+    {
+      "name_en": "Architecting on AWS (Membangun Arsitektur Cloud di AWS)",
+      "name_id": "Architecting on AWS (Membangun Arsitektur Cloud di AWS)",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "1RXYY9Y21XVM",
+      "category": "others"
+    },
+    {
+      "name_en": "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
+      "name_id": "Cloud Practitioner Essentials (Belajar Dasar AWS Cloud)",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "JLX136375P72",
+      "category": "others"
+    },
+    {
+      "name_en": "Starting Programming with Dart",
+      "name_id": "Memulai Pemograman dengan Dart",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "NVP71D1QGPR0",
+      "category": "programming"
+    },
+    {
+      "name_en": "Learning to Create Back-End Applications for Beginners",
+      "name_id": "Belajar Membuat Aplikasi Back-End untuk Pemula",
+      "issuer": "Dicoding Indonesia",
+      "date": "2021",
+      "credentialId": "81P21JGOOZOY",
+      "category": "web"
+    },
+    {
+      "name_en": "Learning Basic Web Programming",
+      "name_id": "Belajar Dasar Pemrograman Web",
+      "issuer": "Dicoding Indonesia",
+      "date": "2019",
+      "credentialId": "07Z6L4VJJPQR",
+      "category": "web"
+    },
+    {
+      "name_en": "Head of Assistant of Operating System",
+      "name_id": "Koor Asisten Praktikum Sistem Operasi",
+      "issuer": "Universitas Telkom Bandung",
+      "date": "2018",
+      "credentialId": "CF.0118/AKD.7/IT-D3LAB/2018",
+      "category": "others"
+    },
+    {
+      "name_en": "Assistant of Computer System",
+      "name_id": "Asisten Praktikum Sistem Komputer",
+      "issuer": "Universitas Telkom Bandung",
+      "date": "2018",
+      "credentialId": "CF.789/AKD.7/IT-D3LAB/2018",
+      "category": "others"
+    },
+    {
+      "name_en": "Assistant of Advanced Algorithm and Programming",
+      "name_id": "Asisten Praktikum Algoritma dan Pemrograman Lanjut",
+      "issuer": "Universitas Telkom Bandung",
+      "date": "2018",
+      "credentialId": "CF.0144/AKD.7/IT-D3LAB/2018",
+      "category": "others"
+    },
+    {
+      "name_en": "Assistant of Basic Electronics",
+      "name_id": "Asisten Praktikum Elektronika Dasar",
+      "issuer": "Universitas Telkom Bandung",
+      "date": "2017",
+      "credentialId": "CF.778/AKD.7/IT-D3LAB/2017",
+      "category": "others"
+    },
+    {
+      "name_en": "Indonesia Android Kejar 2017 - Beginner Level",
+      "name_id": "Indonesia Android Kejar 2017 - Beginner Level",
+      "issuer": "Google",
+      "date": "2017",
+      "credentialId": "",
+      "category": "mobile"
+    },
+    {
+      "name_en": "Assistant of Multimedia Research Laboratory",
+      "name_id": "Asisten Laboratorium Riset Multimedia",
+      "issuer": "Universitas Telkom Bandung",
+      "date": "2017",
+      "credentialId": "CF.602/AKD.7/IT-D3LAB/2017",
+      "category": "others"
+    }
+  ],
+  "ui": {
+    "nav_home": "Home",
+    "nav_about": "About",
+    "nav_experience": "Experience",
+    "nav_portfolio": "Portfolio",
+    "nav_contact": "Contact",
+    "btn_view_work": "View My Work",
+    "btn_download_cv": "Download CV",
+    "btn_get_in_touch": "Get In Touch",
+    "btn_send_message": "Send Message",
+    "btn_details": "View Project Details",
+    "section_about_title": "About Me",
+    "section_about_subtitle": "Get to know me better",
+    "section_personal_info": "Personal Info",
+    "section_tech_skills": "Technical Skills",
+    "section_soft_skills": "Soft Skills",
+    "section_experience_title": "Experience",
+    "section_experience_subtitle": "My professional journey",
+    "section_education": "Education",
+    "section_certificates": "Certificates",
+    "section_portfolio_title": "Portfolio",
+    "section_portfolio_subtitle": "Featured projects and work",
+    "section_testimonials_title": "Testimonials",
+    "section_testimonials_subtitle": "What others say about my work",
+    "section_contact_title": "Get In Touch",
+    "section_contact_subtitle": "Let's create something amazing together",
+    "section_contact_info": "Contact Information",
+    "section_send_message": "Send Message",
+    "section_scroll_down": "Scroll Down",
+    "section_loading": "Loading Portfolio...",
+    "section_email": "Email",
+    "section_phone": "Phone",
+    "section_location": "Location",
+    "form_name": "Your Name",
+    "form_email": "Your Email",
+    "form_subject": "Subject",
+    "form_message": "Your Message",
+    "form_success_en": "Thank you for your message! I will get back to you soon.",
+    "form_success_id": "Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda.",
+    "filter_all": "All",
+    "filter_featured": "Featured",
+    "filter_web": "Web",
+    "filter_mobile": "Mobile",
+    "filter_ai": "AI",
+    "filter_programming": "Programming",
+    "filter_others": "Others",
+    "section_languages": "Languages",
+    "section_availability": "Availability",
+    "section_experience": "Professional Experience",
+    "section_work_mode": "Working Method",
+    "section_interests": "Professional Interests",
+    "modal_close": "Close",
+    "modal_key_features": "Key Features",
+    "modal_technologies": "Technologies Used"
+  }
+}

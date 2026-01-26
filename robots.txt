@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://hamzbond.github.io/sitemap.xml
+
+# Disallow certain files (if any)
+Disallow: /sw.js
+Disallow: /package.json
+Disallow: /README.md
+Disallow: /.gitignore

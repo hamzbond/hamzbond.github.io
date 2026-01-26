@@ -1,0 +1,188 @@
+/* Reset & Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* Golden Brown Color Palette */
+    --primary: #D4AF37;
+    --primary-dark: #B8860B;
+    --secondary: #CD853F;
+    --accent: #DAA520;
+    --warning: #FF8C00;
+    --danger: #DC143C;
+    --success: #228B22;
+
+    /* Glassmorphism Colors */
+    --glass-bg: rgba(212, 175, 55, 0.05);
+    /* Lighter background for better frosted effect */
+    --glass-border: rgba(212, 175, 55, 0.2);
+    /* Stronger border */
+    --glass-shadow: rgba(0, 0, 0, 0.4);
+    /* Darker shadow for depth */
+
+    /* Rich Brown Theme */
+    --bg-primary: #1A0F0D;
+    /* Slightly darker for better contrast */
+    --bg-secondary: #241613;
+    --bg-tertiary: #2D1D19;
+    --text-primary: #FFFFFF;
+    /* Pure white for core readability */
+    --text-secondary: #DEB887;
+    --text-muted: #A0522D;
+
+    /* Golden Brown Gradients */
+    --gradient-primary: linear-gradient(135deg, #D4AF37 0%, #CD853F 50%, #DAA520 100%);
+    --gradient-secondary: linear-gradient(135deg, #8B4513 0%, #A0522D 50%, #CD853F 100%);
+    --gradient-accent: linear-gradient(135deg, #FF8C00 0%, #DAA520 50%, #D4AF37 100%);
+
+    /* Typography */
+    --font-primary: 'Inter', sans-serif;
+    --font-mono: 'Fira Code', monospace;
+
+    /* Spacing */
+    --section-padding: 100px 0;
+    --container-padding: 0 20px;
+    --border-radius: 20px;
+    --border-radius-sm: 10px;
+
+    /* Animations */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+
+    /* Glass Effect */
+    --backdrop-blur: 20px;
+    --glass-opacity: 0.05;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    background: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.6;
+    overflow-x: hidden;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: var(--container-padding);
+}
+
+/* Glass Card Component */
+.glass-card {
+    background: var(--glass-bg);
+    backdrop-filter: blur(12px);
+    /* Slightly less blur for performance and clarity */
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid var(--glass-border);
+    border-radius: var(--border-radius);
+    box-shadow: 0 10px 30px var(--glass-shadow);
+    padding: 40px;
+    /* More breathing room inside cards */
+    position: relative;
+    overflow: hidden;
+    transition: transform var(--transition-normal), box-shadow var(--transition-normal);
+}
+
+.glass-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+    border-color: rgba(212, 175, 55, 0.4);
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    border-radius: var(--border-radius-sm);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 16px;
+    transition: all var(--transition-normal);
+    position: relative;
+    overflow: hidden;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.btn-outline {
+    background: transparent;
+    color: var(--text-primary);
+    border: 2px solid var(--glass-border);
+}
+
+.btn-accent {
+    background: var(--gradient-accent);
+    color: var(--bg-primary);
+    font-weight: 700;
+}
+
+.section-title {
+    font-size: clamp(2.5rem, 4vw, 3.5rem);
+    font-weight: 800;
+    margin-bottom: 20px;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+.section-subtitle {
+    font-size: 20px;
+    color: var(--text-secondary);
+    max-width: 600px;
+    margin: 0 auto 80px;
+    text-align: center;
+}
+
+/* Base Responsive */
+@media (max-width: 1024px) {
+    :root {
+        --section-padding: 80px 0;
+    }
+}
+
+@media (max-width: 768px) {
+    :root {
+        --section-padding: 60px 0;
+    }
+
+    .section-title {
+        font-size: 2.5rem;
+    }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--gradient-primary);
+    border-radius: 10px;
+}
+
+::selection {
+    background: var(--primary);
+    color: white;
+}
