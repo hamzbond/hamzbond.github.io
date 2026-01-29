@@ -296,7 +296,7 @@
       "image": "assets/images/portfolio/partner_email_validation.png",
       "demoUrl": "",
       "githubUrl": "https://github.com/hamzbond/partner_email_validation",
-      "featured": false
+      "featured": true
     },
     {
       "id": "odoo-apps-search",
@@ -326,7 +326,7 @@
       "image": "assets/images/portfolio/odoo_apps_search.png",
       "demoUrl": "",
       "githubUrl": "https://github.com/hamzbond/odoo_apps_search/tree/18.0",
-      "featured": false
+      "featured": true
     },
     {
       "id": "web-direct-print",
@@ -386,7 +386,7 @@
       "image": "assets/images/portfolio/purchase_create_bill.png",
       "demoUrl": "",
       "githubUrl": "https://github.com/hamzbond/purchase_create_bill/tree/19.0",
-      "featured": false
+      "featured": true
     },
     {
       "id": "dynamic-endpoint",
@@ -416,7 +416,7 @@
       "image": "assets/images/portfolio/dynamic_endpoint.png",
       "demoUrl": "",
       "githubUrl": "https://github.com/hamzbond/dynamic_endpoint",
-      "featured": false
+      "featured": true
     },
     {
       "id": "arduino-whatsapp",
