@@ -110,16 +110,31 @@
       "description_en": "Responsible for developing and maintaining Odoo systems for various company business needs.",
       "description_id": "Bertanggung jawab dalam pengembangan dan pemeliharaan sistem Odoo untuk berbagai kebutuhan bisnis perusahaan.",
       "achievements_en": [
-        "Architected and executed a full system recovery and secure cloud migration post-ransomware attack, designing a new multi-layered security infrastructure that restored 100% operational capacity",
-        "Re-engineered a legacy Odoo architecture by eliminating code duplication and standardizing modules. Established modern development practices by introducing Git, Docker, and comprehensive technical documentation to ensure future scalability and maintainability",
-        "Redesigned the annual stock opname process by shifting from stock transfer to inventory adjustment method. Reducing process time by 50% (from 2 weeks to 1) and dramatically improving data accuracy",
-        "Optimized end-to-end system performance by analyzing and providing recommendations for client-side devices and network infrastructure, ensuring stability from the server to the end-user"
+        "Architected and executed a full system recovery and secure cloud migration post-ransomware attack, designing a multi-layered security infrastructure that restored 100% operational capacity.",
+        "Managed Docker-based server infrastructure (multi-container setup), performing performance tuning on PostgreSQL, Nginx reverse proxy, and Odoo worker configurations to ensure high availability and speed.",
+        "Initiated the enterprise version migration project from Odoo 11 to Odoo 19, currently driving the phase for HR module refactoring and database schema restructuring.",
+        "Engineered a comprehensive HRIS solution in Odoo, featuring face-recognition and geolocation-based attendance, automated Indonesian payroll (PPh 21 & BPJS), and employee reprimand management.",
+        "Streamlined end-to-end procurement workflows—encompassing Purchase Requests, Quality Control, multi-level approval matrix, goods receipt, and payment invoicing.",
+        "Developed custom financial and operational reports, including a tailored Cash Flow Statement for Odoo 11 and analytical reports for local sales, timber exports, and procurement.",
+        "Re-engineered legacy Odoo architecture by eliminating code duplication, standardizing modules, and implementing Git, Docker, and comprehensive technical documentation.",
+        "Integrated Odoo ERP with internal company systems to enable seamless, real-time data synchronization across business units.",
+        "Maintained operational data integrity by resolving critical transactional errors, including stock picking adjustments, pricing corrections, and document sequence fixes.",
+        "Managed user lifecycle, multi-currency configurations, and role-based access control (Record Rules & Access Rights) to enforce system security and compliance.",
+        "Redesigned the annual stock opname process by shifting from stock transfer to inventory adjustment method, reducing process time by 50% (from 2 weeks to 1) and improving data accuracy."
+    
       ],
       "achievements_id": [
-        "Merancang dan mengeksekusi pemulihan sistem penuh dan migrasi cloud yang aman setelah serangan ransomware, merancang infrastruktur keamanan multi-layer baru yang memulihkan 100% kapasitas operasional",
-        "Merekayasa ulang arsitektur Odoo legacy dengan menghilangkan duplikasi kode dan standardisasi modul. Membangun praktik pengembangan modern dengan memperkenalkan Git, Docker, dan dokumentasi teknis yang komprehensif untuk memastikan skalabilitas dan pemeliharaan di masa depan",
-        "Mendesain ulang proses stok opname tahunan dengan beralih dari metode transfer stok ke penyesuaian inventaris. Mengurangi waktu proses sebesar 50% (dari 2 minggu menjadi 1 minggu) dan meningkatkan akurasi data secara signifikan",
-        "Mengoptimalkan performa sistem end-to-end dengan menganalisis dan memberikan rekomendasi untuk perangkat sisi klien dan infrastruktur jaringan, memastikan stabilitas dari server hingga pengguna akhir"
+        "Merancang dan mengeksekusi pemulihan sistem penuh serta migrasi cloud yang aman pasca-serangan ransomware, membangun infrastruktur keamanan multi-layer yang memulihkan 100% kapasitas operasional.",
+        "Mengelola infrastruktur server berbasis Docker (multi-container setup), melakukan tuning performa pada PostgreSQL, Nginx reverse proxy, dan konfigurasi Odoo worker untuk menjaga kestabilan dan kecepatan sistem.",
+        "Menginisiasi proyek migrasi versi enterprise dari Odoo 11 ke Odoo 19, yang saat ini berfokus pada refactoring modul HR dan restrukturisasi skema database.",
+        "Mengembangkan solusi HRIS terpadu di Odoo, mencakup presensi berbasis Face Recognition & Geolocation, otomatisasi Payroll Indonesia (PPh 21 & BPJS), serta manajemen surat teguran.",
+        "Mendesain ulang alur kerja procurement end-to-end—mulai dari Purchase Request, Quality Check, matriks approval bertingkat, penerimaan barang, hingga faktur pembayaran.",
+        "Mengembangkan laporan keuangan dan operasional kustom, termasuk laporan Cash Flow Statement pada Odoo 11 serta laporan analitis Penjualan Lokal, Ekspor Kayu, dan Pembelian.",
+        "Merekayasa ulang arsitektur Odoo legacy dengan mengeliminasi duplikasi kode, standardisasi modul, serta menerapkan praktik DevOps modern menggunakan Git, Docker, dan dokumentasi komprehensif.",
+        "Mengintegrasikan ERP Odoo dengan berbagai sistem internal perusahaan untuk menciptakan sinkronisasi data antar-unit bisnis yang real-time dan akurat.",
+        "Menjaga integritas data operasional dengan memulihkan dan mengoreksi kesalahan transaksi sensitif, seperti penyesuaian stock picking, pembetulan harga, dan perbaikan sequence dokumen.",
+        "Mengelola siklus hidup pengguna, konfigurasi multi-currency, serta hak akses berbasis peran (Record Rules & Access Rights) untuk menjamin keamanan dan kepatuhan sistem.",
+        "Mendesain ulang proses stok opname tahunan dengan beralih dari metode transfer stok ke penyesuaian inventaris, mengurangi waktu proses sebesar 50% (dari 2 minggu menjadi 1 minggu) dan meningkatkan akurasi data."
       ]
     },
     {
