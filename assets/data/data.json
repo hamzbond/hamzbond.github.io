@@ -314,36 +314,6 @@
       "featured": true
     },
     {
-      "id": "odoo-apps-search",
-      "title_en": "Odoo Apps Search Enhancement",
-      "title_id": "Penyempurnaan Pencarian Aplikasi Odoo",
-      "description_en": "Professional search and filtering tools for the Odoo Apps dashboard.",
-      "description_id": "Alat pencarian dan pemfilteran profesional untuk dashboard Aplikasi Odoo.",
-      "longDescription_en": "This module enhances the standard Odoo Apps dashboard by adding critical search parameters. Users can filter modules based on Author, Website, and whether they contain demo data, making it easier to manage large sets of Odoo modules.",
-      "longDescription_id": "Modul ini menyempurnakan dashboard Aplikasi Odoo standar dengan menambahkan parameter pencarian penting. Pengguna dapat memfilter modul berdasarkan Penulis, Situs Web, dan apakah modul tersebut berisi data demo, sehingga memudahkan pengelolaan kumpulan modul Odoo yang besar.",
-      "features_en": [
-        "Search by Author and Website",
-        "Filter by Demo Data existence",
-        "Dynamic categorization and grouping",
-        "Sleek UI integration"
-      ],
-      "features_id": [
-        "Pencarian berdasarkan Penulis dan Situs Web",
-        "Filter berdasarkan keberadaan Data Demo",
-        "Kategorisasi dan pengelompokan dinamis",
-        "Integrasi UI yang mulus"
-      ],
-      "technologies": [
-        "Odoo 18.0",
-        "Python",
-        "OWL"
-      ],
-      "image": "assets/images/portfolio/odoo_apps_search.png",
-      "demoUrl": "",
-      "githubUrl": "https://github.com/hamzbond/odoo_apps_search/tree/18.0",
-      "featured": true
-    },
-    {
       "id": "web-direct-print",
       "title_en": "Odoo Web Direct Print",
       "title_id": "Cetak Langsung Web Odoo",
@@ -493,6 +463,198 @@
       "image": "assets/images/portfolio/arduino_telegram.png",
       "demoUrl": "",
       "githubUrl": "https://github.com/hamzbond/Arduino-Telegram-Library",
+      "featured": true
+    },
+    {
+      "id": "restore-classic-form-edit-button",
+      "title_en": "Restore Classic Form Edit Button",
+      "title_id": "Restore Classic Form Edit Button",
+      "description_en": "Odoo module to bring back the dedicated 'Edit' button in form views for a clearer, classic user experience.",
+      "description_id": "Modul Odoo untuk mengembalikan tombol 'Edit' klasik pada tampilan formulir demi pengalaman pengguna yang lebih jelas.",
+      "longDescription_en": "This module restores the traditional explicit Edit button on Odoo form views, preventing accidental edits and improving user experience for teams accustomed to classic form interactions.",
+      "longDescription_id": "Modul ini mengembalikan tombol Edit eksplisit tradisional pada tampilan formulir Odoo, mencegah pengubahan data tanpa sengaja dan meningkatkan kenyamanan navigasi pengguna.",
+      "features_en": [
+        "Restores explicit Edit button on form views",
+        "Prevents unintended auto-save or data modifications",
+        "Seamless integration with standard Odoo UI"
+      ],
+      "features_id": [
+        "Mengembalikan tombol Edit eksplisit di form view",
+        "Mencegah perubahan data atau auto-save yang tidak disengaja",
+        "Integrasi mulus dengan UI standar Odoo"
+      ],
+      "technologies": ["Odoo", "Python", "XML", "JavaScript"],
+      "image": "assets/images/portfolio/restore_classic_form_edit_button.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/18.0/restore_classic_form_edit_button",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "sequence-roman-date",
+      "title_en": "Sequence Roman Date",
+      "title_id": "Sequence Roman Date",
+      "description_en": "Extends Odoo sequence generation to support Roman numerals for month and year formatting in document numbers.",
+      "description_id": "Ekstensi penomoran otomatis Odoo untuk mendukung format angka Romawi pada bulan dan tahun dokumen.",
+      "longDescription_en": "An essential utility module for companies requiring official document numbering compliant with local standards, allowing dynamic insertion of Roman numerals for months and years in Odoo sequences.",
+      "longDescription_id": "Modul utilitas penting untuk penomoran dokumen resmi perusahaan, memungkinkan penyisipan angka Romawi secara dinamis untuk bulan dan tahun pada sequence Odoo.",
+      "features_en": [
+        "Dynamic Roman numeral conversion for dates",
+        "Customizable document sequence prefixes and suffixes",
+        "Compatible across standard and custom document types"
+      ],
+      "features_id": [
+        "Konversi angka Romawi dinamis untuk tanggal",
+        "Kustomisasi awalan (prefix) dan akhiran (suffix) sequence dokumen",
+        "Kompatibel untuk berbagai tipe dokumen standar maupun kustom"
+      ],
+      "technologies": ["Odoo", "Python", "XML"],
+      "image": "assets/images/portfolio/sequence_roman_date.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/sequence_roman_date",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "user-id-in-sequence-legend",
+      "title_en": "User ID in Sequence Legend",
+      "title_id": "User ID in Sequence Legend",
+      "description_en": "Adds User ID parameters to Odoo sequence legends for personalized document numbering per user.",
+      "description_id": "Menambahkan parameter User ID pada legend sequence Odoo untuk penomoran dokumen spesifik per pengguna.",
+      "longDescription_en": "Enhances Odoo sequence capabilities by adding User ID placeholders. This enables unique document prefixing based on the active user creating the record (e.g., sales representative codes in document numbers).",
+      "longDescription_id": "Meningkatkan kemampuan sequence Odoo dengan menambahkan placeholder User ID. Hal ini memungkinkan penomoran dokumen unik berdasarkan pengguna yang membuat data tersebut (misal: kode salesman pada nomor transaksi).",
+      "features_en": [
+        "User ID placeholder support in sequence legend",
+        "Dynamic document prefixing per active user",
+        "Easy configuration without core override"
+      ],
+      "features_id": [
+        "Dukungan placeholder User ID pada legend sequence",
+        "Penomoran dokumen dinamis berdasarkan user aktif",
+        "Konfigurasi mudah tanpa merusak alur standar"
+      ],
+      "technologies": ["Odoo", "Python", "XML"],
+      "image": "assets/images/portfolio/user_id_in_sequence_legend.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/user_id_in_sequence_legend",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "purchase-create-vendor-bill",
+      "title_en": "Purchase Create Vendor Bill",
+      "title_id": "Purchase Create Vendor Bill",
+      "description_en": "Streamlines vendor bill creation directly from Purchase Orders with automated data mapping.",
+      "description_id": "Mempermudah pembuatan Tagihan Pemasok (Vendor Bill) langsung dari Pesanan Pembelian (Purchase Order).",
+      "longDescription_en": "A workflow enhancement module that optimizes the procurement-to-pay process, allowing purchasing teams to generate accurately mapped Vendor Bills directly from Purchase Order views with fewer clicks.",
+      "longDescription_id": "Modul optimasi alur kerja procurement-to-pay yang memungkinkan tim pembelian membuat Vendor Bill secara akurat dan cepat langsung dari tampilan Purchase Order.",
+      "features_en": [
+        "One-click Vendor Bill creation from Purchase Order",
+        "Automated line item and price mapping",
+        "Reduces manual entry errors in procurement workflow"
+      ],
+      "features_id": [
+        "Pembuatan Vendor Bill sekali klik dari Purchase Order",
+        "Otomatisasi pemetaan item barang dan harga",
+        "Mengurangi risiko kesalahan input manual pada alur procurement"
+      ],
+      "technologies": ["Odoo", "Python", "XML"],
+      "image": "assets/images/portfolio/purchase_create_vendor_bill.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/purchase_create_vendor_bill",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "subsequence-generator-for-sequences",
+      "title_en": "Subsequence Generator for Sequences",
+      "title_id": "Subsequence Generator for Sequences",
+      "description_en": "Advanced sequence management tool to generate hierarchical subsequences in Odoo.",
+      "description_id": "Modul pengelolaan sequence lanjutan untuk membuat penomoran bertingkat (subsequence) di Odoo.",
+      "longDescription_en": "Provides advanced numbering logic by enabling parent-child subsequence relationships. Perfect for complex document structures, sub-invoices, or branched transaction references.",
+      "longDescription_id": "Menyediakan logika penomoran bertingkat dengan mendukung hubungan parent-child pada sequence Odoo. Sangat cocok untuk struktur dokumen kompleks atau referensi transaksi berabang.",
+      "features_en": [
+        "Hierarchical subsequence generation",
+        "Flexible prefixing for parent and child sequences",
+        "Ensures zero gaps in transactional document numbering"
+      ],
+      "features_id": [
+        "Pembuatan subsequence bertingkat (hierarki)",
+        "Pengaturan prefix fleksibel untuk parent & child sequence",
+        "Menjamin tidak ada urutan nomor yang terlewat pada transaksi"
+      ],
+      "technologies": ["Odoo", "Python", "XML"],
+      "image": "assets/images/portfolio/subsequence_generator_for_sequences.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/subsequence_generator_for_sequences",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "sequence-preview",
+      "title_en": "Sequence Preview",
+      "title_id": "Sequence Preview",
+      "description_en": "Provides real-time numbering preview during sequence configuration in Odoo Settings.",
+      "description_id": "Menampilkan pratinjau (preview) penomoran secara real-time saat mengonfigurasi sequence di Settings.",
+      "longDescription_en": "A developer and administrator productivity module that shows an instant preview of how a document sequence will look before saving configuration changes, eliminating trial-and-error setups.",
+      "longDescription_id": "Modul produktivitas untuk admin dan developer yang menampilkan hasil penomoran dokumen secara instan sebelum menyimpan konfigurasi, menghilangkan proses trial-and-error.",
+      "features_en": [
+        "Real-time dynamic sequence preview",
+        "Instant feedback on date formats, prefixes, and suffixes",
+        "Saves time during initial system configuration"
+      ],
+      "features_id": [
+        "Pratinjau sequence dinamis secara real-time",
+        "Umpan balik langsung untuk format tanggal, prefix, dan suffix",
+        "Menghemat waktu saat konfigurasi awal sistem"
+      ],
+      "technologies": ["Odoo", "Python", "XML", "JavaScript"],
+      "image": "assets/images/portfolio/sequence_preview.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/sequence_preview",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": true
+    },
+    {
+      "id": "odoo-apps-search-enhancements",
+      "title_en": "Odoo Apps Search Enhancements",
+      "title_id": "Odoo Apps Search Enhancements",
+      "description_en": "Enhances the built-in Odoo Apps dashboard search experience with deeper filters and parameters.",
+      "description_id": "Meningkatkan pengalaman pencarian pada dasbor Odoo Apps dengan filter dan parameter yang lebih mendalam.",
+      "longDescription_en": "Improves administrative management by expanding the native Odoo Apps search capabilities, making it easier for system administrators to filter, locate, and manage installed or technical modules.",
+      "longDescription_id": "Meningkatkan efisiensi manajemen sistem dengan memperluas fitur pencarian modul bawaan Odoo, memudahkan administrator untuk memfilter dan menemukan modul teknis.",
+      "features_en": [
+        "Enhanced search filters for internal modules",
+        "Quick category and technical name search",
+        "Clean UI integration within Apps menu"
+      ],
+      "features_id": [
+        "Filter pencarian yang ditingkatkan untuk modul internal",
+        "Pencarian cepat berdasarkan kategori dan nama teknis",
+        "Integrasi UI yang rapi di dalam menu Apps"
+      ],
+      "technologies": ["Odoo", "Python", "XML"],
+      "image": "assets/images/portfolio/odoo_apps_search_enhancements.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/17.0/odoo_apps_search_enhancements",
+      "githubUrl": "https://github.com/hamzbond",
+      "featured": false
+    },
+    {
+      "id": "flexible-chatter",
+      "title_en": "Flexible Chatter",
+      "title_id": "Flexible Chatter",
+      "description_en": "Allows customizable positioning and resizable chatter panels across Odoo form views.",
+      "description_id": "Memungkinkan kustomisasi posisi dan ukuran panel chatter pada tampilan formulir Odoo.",
+      "longDescription_en": "An essential UI/UX enhancement module that allows users or admins to dynamically adjust chatter panel layouts (side-by-side or bottom position) and resize chatter width for better readability and screen utilization.",
+      "longDescription_id": "Modul peningkatan UI/UX yang memungkinkan pengguna atau admin menyesuaikan tata letak panel chatter (di samping atau di bawah) serta mengubah ukurannya agar tampilan lebih nyaman dan efisien.",
+      "features_en": [
+        "Resizable and flexible Chatter panel positioning",
+        "Optimizes screen space utilization for complex forms",
+        "Smooth user experience with responsive layout adjustments"
+      ],
+      "features_id": [
+        "Pengaturan posisi dan ukuran panel Chatter yang fleksibel",
+        "Mengoptimalkan ruang layar untuk formulir dengan data padat",
+        "Pengalaman pengguna yang responsif dan nyaman"
+      ],
+      "technologies": ["Odoo", "Python", "XML", "JavaScript", "CSS"],
+      "image": "assets/images/portfolio/flexible_chatter.png",
+      "demoUrl": "https://apps.odoo.com/apps/modules/19.0/web_chatter_resizable",
+      "githubUrl": "https://github.com/hamzbond/web_chatter_resizable",
       "featured": true
     }
   ],
