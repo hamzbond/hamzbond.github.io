@@ -930,6 +930,8 @@
     "form_message": "Your Message",
     "form_success_en": "Thank you for your message! I will get back to you soon.",
     "form_success_id": "Terima kasih atas pesan Anda! Saya akan segera menghubungi Anda.",
+    "form_error_en": "Failed to send message. Please try again later.",
+    "form_error_id": "Gagal mengirim pesan. Silakan coba lagi nanti.",
     "filter_all": "All",
     "filter_featured": "Featured",
     "filter_web": "Web",

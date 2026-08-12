@@ -380,7 +380,7 @@ function setupContactForm() {
             contactForm.reset();
         } catch (error) {
             console.error('EmailJS Error:', error);
-            showFormMessage('Failed to send message. Please try again later.', 'error');
+            showFormMessage(t(ui, 'form_error'), 'error');
         } finally {
             btn.disabled = false;
             btn.innerHTML = originalText;
