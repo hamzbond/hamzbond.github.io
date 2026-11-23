@@ -12,7 +12,6 @@ async function renderContent() {
     renderEducation(portfolioData.education);
     renderCertificates(portfolioData.certificates);
     renderPortfolio(portfolioData.portfolio);
-    renderTestimonials(portfolioData.testimonials);
 }
 
 function renderUI(ui) {
@@ -292,6 +291,8 @@ function renderPortfolio(portfolio) {
 }
 
 function setupTiltEffect() {
+    // Skip the 3D tilt for users who prefer reduced motion
+    if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) return;
     const items = document.querySelectorAll('.portfolio-item');
     items.forEach(item => {
         item.addEventListener('mousemove', (e) => {
@@ -314,23 +315,4 @@ function getCategoryFromTech(technologies) {
     const mobileFrameworks = ['React Native', 'Flutter', 'Ionic'];
     if (technologies.some(tech => mobileFrameworks.includes(tech))) return 'mobile';
     return 'web';
-}
-
-function renderTestimonials(testimonials) {
-    const testimonialsContainer = document.getElementById('testimonials-container');
-    if (!testimonialsContainer) return;
-
-    const testimonialsHTML = testimonials.map(testimonial => `
-        <div class="testimonial-item">
-            <p class="testimonial-text">${t(testimonial, 'text')}</p>
-            <div class="testimonial-author">
-                <img src="${testimonial.avatar}" alt="${testimonial.name}" class="testimonial-avatar">
-                <div class="testimonial-info">
-                    <h4>${testimonial.name}</h4>
-                    <p>${testimonial.position} at ${testimonial.company}</p>
-                </div>
-            </div>
-        </div>
-    `).join('');
-    testimonialsContainer.innerHTML = testimonialsHTML;
 }

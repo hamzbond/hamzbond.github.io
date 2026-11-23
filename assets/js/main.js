@@ -19,7 +19,6 @@ const closeModal = document.querySelector('.close-modal');
 let portfolioData = null;
 let currentLang = localStorage.getItem('selectedLang') || 'en';
 let particles = [];
-let testimonialIndex = 0;
 
 // Canvas setup for particles
 const ctx = particleCanvas.getContext('2d');
@@ -33,13 +32,13 @@ async function initializeApp() {
         setupCanvas();
         showLoadingProgress(20);
         await loadData();
+        if (!portfolioData) showNotification('Failed to load portfolio data. Please refresh the page.', 'error');
         showLoadingProgress(60);
         setupNavigation();
         setupParticles();
         setupScrollEffects();
         setupPortfolioFilters();
         setupCertificateFilters();
-        setupTestimonialSlider();
         setupContactForm();
         setupDownloadCV();
         setupLanguageToggle();
@@ -71,6 +70,7 @@ function hideLoadingScreen() {
 async function loadData() {
     try {
         const response = await fetch('./assets/data/data.json');
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
         portfolioData = await response.json();
     } catch (error) {
         console.error('Error loading data:', error);
@@ -88,7 +88,8 @@ function setupCanvas() {
 }
 
 function setupParticles() {
-    const particleCount = window.innerWidth > 768 ? 100 : 50;
+    const reduceMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    const particleCount = reduceMotion ? 0 : (window.innerWidth > 768 ? 100 : 50);
     for (let i = 0; i < particleCount; i++) {
         particles.push({
             x: Math.random() * particleCanvas.width,
@@ -229,33 +230,73 @@ function setupLanguageToggle() {
         else btn.classList.remove('active');
     });
     langBtns.forEach(btn => {
-        btn.addEventListener('click', () => {
+        btn.addEventListener('click', async () => {
             const selectedLang = btn.getAttribute('data-lang');
             if (selectedLang !== currentLang) {
+                // Re-rendering replaces the portfolio and certificate items, so remember the active filters
+                const activePortfolioFilter = document.querySelector('.filter-btn.active')?.getAttribute('data-filter');
+                const activeCertFilter = document.querySelector('.cert-filter-btn.active')?.getAttribute('data-filter');
                 currentLang = selectedLang;
                 localStorage.setItem('selectedLang', currentLang);
                 langBtns.forEach(b => b.classList.remove('active'));
                 btn.classList.add('active');
-                renderContent();
+                await renderContent();
+                reapplyFilter('.filter-btn', activePortfolioFilter);
+                reapplyFilter('.cert-filter-btn', activeCertFilter);
             }
         });
     });
 }
 
+function reapplyFilter(selector, filter) {
+    if (!filter || filter === 'all') return;
+    const btn = document.querySelector(`${selector}[data-filter="${filter}"]`);
+    if (btn) btn.click();
+}
+
 // Project Modal Logic
+let lastFocusedElement = null;
+
 function setupProjectModal() {
     if (!closeModal) return;
-    closeModal.addEventListener('click', () => {
-        projectModal.style.display = "none";
-        document.body.style.overflow = "auto";
+    closeModal.addEventListener('click', closeProjectModal);
+    closeModal.addEventListener('keydown', (event) => {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            closeProjectModal();
+        }
     });
 
     window.addEventListener('click', (event) => {
-        if (event.target == projectModal) {
-            projectModal.style.display = "none";
-            document.body.style.overflow = "auto";
+        if (event.target == projectModal) closeProjectModal();
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (projectModal.style.display !== 'block') return;
+        if (event.key === 'Escape') {
+            closeProjectModal();
+        } else if (event.key === 'Tab') {
+            // Keep keyboard focus inside the open modal
+            const focusable = [...projectModal.querySelectorAll('a[href], button, [tabindex="0"]')];
+            if (focusable.length === 0) return;
+            const first = focusable[0];
+            const last = focusable[focusable.length - 1];
+            if (event.shiftKey && document.activeElement === first) {
+                event.preventDefault();
+                last.focus();
+            } else if (!event.shiftKey && document.activeElement === last) {
+                event.preventDefault();
+                first.focus();
+            }
         }
     });
+}
+
+function closeProjectModal() {
+    projectModal.style.display = "none";
+    document.body.style.overflow = "auto";
+    if (lastFocusedElement) lastFocusedElement.focus();
+    lastFocusedElement = null;
 }
 
 function openProjectModal(projectId) {
@@ -288,8 +329,10 @@ function openProjectModal(projectId) {
         ${(demoBtn || githubBtn) ? `<div class="modal-footer">${demoBtn}${githubBtn}</div>` : ''}
     `;
 
+    lastFocusedElement = document.activeElement;
     projectModal.style.display = "block";
     document.body.style.overflow = "hidden";
+    if (closeModal) closeModal.focus();
 }
 
 // Portfolio Filters
@@ -343,24 +386,6 @@ function setupCertificateFilters() {
             });
         });
     });
-}
-
-// Testimonial Slider
-function setupTestimonialSlider() {
-    const container = document.getElementById('testimonials-container');
-    const prevButton = document.getElementById('prev-testimonial');
-    const nextButton = document.getElementById('next-testimonial');
-    if (!container || !nextButton || !prevButton) return;
-
-    function showTestimonial(index) {
-        const count = portfolioData.testimonials.length;
-        if (count === 0) return;
-        testimonialIndex = (index + count) % count;
-        container.style.transform = `translateX(-${testimonialIndex * 100}%)`;
-    }
-    nextButton.addEventListener('click', () => showTestimonial(testimonialIndex + 1));
-    prevButton.addEventListener('click', () => showTestimonial(testimonialIndex - 1));
-    setInterval(() => showTestimonial(testimonialIndex + 1), 5000);
 }
 
 // Contact Form Integration (EmailJS)

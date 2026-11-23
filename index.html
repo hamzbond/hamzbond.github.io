@@ -16,6 +16,40 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://hamzbond.github.io">
 
+    <!-- Canonical & social preview -->
+    <link rel="canonical" href="https://hamzbond.github.io/">
+    <meta property="og:image" content="https://hamzbond.github.io/assets/images/profile/profile.jpg">
+    <meta property="og:image:alt" content="Achmad Hamzah - Full Stack Odoo Developer">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Hamzbond - Full Stack Developer">
+    <meta name="twitter:description" content="Professional portfolio showcasing expertise in modern web development">
+    <meta name="twitter:image" content="https://hamzbond.github.io/assets/images/profile/profile.jpg">
+
+    <!-- Structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Achmad Hamzah",
+        "alternateName": "Hamzbond",
+        "jobTitle": "Full Stack Odoo Developer",
+        "url": "https://hamzbond.github.io/",
+        "image": "https://hamzbond.github.io/assets/images/profile/profile.jpg",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Gresik",
+            "addressRegion": "East Java",
+            "addressCountry": "ID"
+        },
+        "sameAs": [
+            "https://github.com/hamzbond",
+            "https://www.linkedin.com/in/achmad-hamzah/",
+            "https://www.instagram.com/hamzbond/"
+        ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/jpeg" href="assets/images/brand/icon.jpg">
 
@@ -50,7 +84,7 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="assets/images/brand/icon.jpg" alt="Logo" class="logo-image">
+                <img src="assets/images/brand/icon.jpg" alt="Hamzbond logo" class="logo-image">
                 <!-- <span class="logo-text">HB</span> -->
             </div>
             <ul class="nav-menu" id="nav-menu">
@@ -354,9 +388,9 @@
     </div>
 
     <!-- Project Modal -->
-    <div id="projectModal" class="modal">
+    <div id="projectModal" class="modal" role="dialog" aria-modal="true" aria-label="Project details">
         <div class="modal-content glass-card">
-            <span class="close-modal">&times;</span>
+            <span class="close-modal" role="button" tabindex="0" aria-label="Close">&times;</span>
             <div id="modalBody" class="modal-body text-left">
                 <!-- Content injected via JS -->
             </div>

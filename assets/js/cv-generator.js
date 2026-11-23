@@ -2,9 +2,23 @@
  * CV Generation logic using jsPDF
  */
 
+// PDF labels per language
+const CV_LABELS = {
+    en: { contact: 'Contact', phone: 'PHONE:', email: 'EMAIL:', linkedin: 'LINKEDIN:', address: 'ADDRESS:',
+          education: 'Education', gpa: 'GPA', techSkills: 'Tech Skills', softSkills: 'Soft Skills',
+          language: 'Language', summary: 'Professional Summary', experience: 'Professional Experience',
+          certs: 'Featured Certifications', portfolio: 'Portfolio Highlights' },
+    id: { contact: 'Kontak', phone: 'TELEPON:', email: 'EMAIL:', linkedin: 'LINKEDIN:', address: 'ALAMAT:',
+          education: 'Pendidikan', gpa: 'IPK', techSkills: 'Keahlian Teknis', softSkills: 'Soft Skills',
+          language: 'Bahasa', summary: 'Ringkasan Profesional', experience: 'Pengalaman Profesional',
+          certs: 'Sertifikasi Unggulan', portfolio: 'Highlight Portofolio' }
+};
+
 function generateCV() {
     if (!portfolioData) return;
-    const { profile, skills, experience, education, certificates, portfolio, ui } = portfolioData;
+    const { skills, experience, education, certificates, portfolio } = portfolioData;
+    const profile = localize(portfolioData.profile);
+    const L = CV_LABELS[currentLang] || CV_LABELS.en;
     const { jsPDF } = window.jspdf;
     const doc = new jsPDF();
     const pageWidth = doc.internal.pageSize.width;
@@ -78,16 +92,16 @@ function generateCV() {
     sideY += 35;
 
     // 2. Contact
-    sideY = drawSidebarHeader("Contact", sideY);
+    sideY = drawSidebarHeader(L.contact, sideY);
     const contactConfig = [
-        { label: 'PHONE:', text: profile.phone },
-        { label: 'EMAIL:', text: profile.email },
-        { label: 'LINKEDIN:', text: "achmad-hamzah" },
-        { label: 'ADDRESS:', text: profile.location }
+        { label: L.phone, text: profile.phone },
+        { label: L.email, text: profile.email },
+        { label: L.linkedin, text: "achmad-hamzah" },
+        { label: L.address, text: profile.location }
     ];
 
     contactConfig.forEach(item => {
-        if (sideY > pageHeight - 15) sideY = drawSidebarHeader("Contact", sideY);
+        if (sideY > pageHeight - 15) sideY = drawSidebarHeader(L.contact, sideY);
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(8);
         doc.setTextColor(...colors.primary);
@@ -105,9 +119,9 @@ function generateCV() {
     sideY += 5;
 
     // 3. Education
-    sideY = drawSidebarHeader(ui.section_education || "Education", sideY);
+    sideY = drawSidebarHeader(L.education, sideY);
     education.forEach(edu => {
-        if (sideY > pageHeight - 25) { sideY = drawSidebarHeader(ui.section_education || "Education", sideY); }
+        if (sideY > pageHeight - 25) { sideY = drawSidebarHeader(L.education, sideY); }
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(9.5);
         doc.setTextColor(...colors.textBlack);
@@ -121,16 +135,16 @@ function generateCV() {
         doc.setFontSize(8);
         doc.setFont('helvetica', 'normal');
         doc.setTextColor(...colors.textLight);
-        doc.text(edu.period + (edu.gpa ? ` | GPA: ${edu.gpa}` : ''), 10, sideY);
+        doc.text(edu.period + (edu.gpa ? ` | ${L.gpa}: ${edu.gpa}` : ''), 10, sideY);
         sideY += 8;
     });
 
     // 4. Tech Skills
-    sideY = drawSidebarHeader("Tech Skills", sideY);
+    sideY = drawSidebarHeader(L.techSkills, sideY);
     doc.setFontSize(8);
     doc.setTextColor(...colors.textBlack);
     skills.technical.slice(0, 5).forEach(cat => {
-        if (sideY > pageHeight - 15) { sideY = drawSidebarHeader("Tech Skills", sideY); }
+        if (sideY > pageHeight - 15) { sideY = drawSidebarHeader(L.techSkills, sideY); }
         doc.setFont('helvetica', 'bold');
         doc.text(cat.category.toUpperCase(), 10, sideY);
         sideY += 4.5;
@@ -142,9 +156,9 @@ function generateCV() {
     });
 
     // 5. Soft Skills
-    sideY = drawSidebarHeader("Soft Skills", sideY);
+    sideY = drawSidebarHeader(L.softSkills, sideY);
     skills.soft.slice(0, 10).forEach(skill => {
-        if (sideY > pageHeight - 10) sideY = drawSidebarHeader("Soft Skills", sideY);
+        if (sideY > pageHeight - 10) sideY = drawSidebarHeader(L.softSkills, sideY);
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(9);
         doc.setTextColor(...colors.textBlack);
@@ -153,13 +167,13 @@ function generateCV() {
     });
 
     // Language
-    sideY = drawSidebarHeader("Language", sideY);
+    sideY = drawSidebarHeader(L.language, sideY);
     profile.languages.slice(0, 3).forEach(lang => {
-        if (sideY > pageHeight - 10) sideY = drawSidebarHeader("Language", sideY);
+        if (sideY > pageHeight - 10) sideY = drawSidebarHeader(L.language, sideY);
         doc.setFont('helvetica', 'normal');
         doc.setFontSize(9);
         doc.setTextColor(...colors.textBlack);
-        doc.text(`- ${lang.name} (${lang.level})`, 12, sideY);
+        doc.text(`- ${lang.name} (${t(lang, 'level')})`, 12, sideY);
         sideY += 5;
     });
 
@@ -184,7 +198,7 @@ function generateCV() {
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(13);
     doc.setTextColor(...colors.primary);
-    doc.text("Professional Summary", mainX, yPos);
+    doc.text(L.summary, mainX, yPos);
 
     yPos += 8;
     doc.setFontSize(10);
@@ -197,7 +211,7 @@ function generateCV() {
     // Professional Experience
     doc.setFont('helvetica', 'bold');
     doc.setFontSize(13);
-    doc.text("Professional Experience", mainX, yPos);
+    doc.text(L.experience, mainX, yPos);
     yPos += 10;
 
     experience.forEach(job => {
@@ -254,7 +268,7 @@ function generateCV() {
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(13);
         doc.setTextColor(...colors.primary);
-        doc.text("Featured Certifications", mainX, yPos);
+        doc.text(L.certs, mainX, yPos);
         yPos += 8;
 
         featuredCerts.forEach(cert => {
@@ -273,7 +287,7 @@ function generateCV() {
         if (yPos > pageHeight - 50) { mainPage++; preparePage(mainPage); yPos = 20; }
         doc.setFont('helvetica', 'bold');
         doc.setFontSize(13);
-        doc.text("Portfolio Highlights", mainX, yPos);
+        doc.text(L.portfolio, mainX, yPos);
         yPos += 8;
 
         portfolio.filter(p => p.featured).slice(0, 5).forEach(proj => {
