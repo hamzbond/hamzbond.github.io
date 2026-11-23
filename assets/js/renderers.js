@@ -313,6 +313,7 @@ function setupTiltEffect() {
 
 function getCategoryFromTech(technologies) {
     const mobileFrameworks = ['React Native', 'Flutter', 'Ionic'];
-    if (technologies.some(tech => mobileFrameworks.includes(tech))) return 'mobile';
-    return 'web';
+    const categories = [technologies.some(tech => mobileFrameworks.includes(tech)) ? 'mobile' : 'web'];
+    if (technologies.some(tech => tech.startsWith('Odoo'))) categories.push('odoo');
+    return categories.join(' ');
 }

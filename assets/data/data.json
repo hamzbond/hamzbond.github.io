@@ -45,6 +45,7 @@
         "category": "Frontend Development",
         "items": [
           "Odoo",
+          "OWL",
           "React.js",
           "Vue.js",
           "TypeScript",
@@ -87,10 +88,21 @@
           "MySQL",
           "Docker",
           "Git",
-          "Nginx",
           "Postman"
         ],
         "icon": "🛠️"
+      },
+      {
+        "category": "Server & Cloud",
+        "items": [
+          "Server Management",
+          "Linux",
+          "Windows Server",
+          "Cloud Server",
+          "Cloudflare",
+          "Nginx"
+        ],
+        "icon": "☁️"
       }
     ],
     "soft": [
