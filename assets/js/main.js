@@ -45,6 +45,7 @@ async function initializeApp() {
         setupLanguageToggle();
         setupProjectModal();
         setupScrollProgress();
+        document.getElementById('footer-year').textContent = new Date().getFullYear();
         showLoadingProgress(80);
         await renderContent();
         showLoadingProgress(100);
@@ -261,15 +262,22 @@ function openProjectModal(projectId) {
     const project = portfolioData.portfolio.find(p => p.id === projectId);
     if (!project) return;
 
-    const ui = portfolioData.ui;
+    const ui = localize(portfolioData.ui);
+    const demoBtn = project.demoUrl
+        ? `<a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> ${ui.btn_live_demo}</a>`
+        : '';
+    const githubBtn = project.githubUrl
+        ? `<a href="${project.githubUrl}" target="_blank" rel="noopener noreferrer" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>`
+        : '';
+
     modalBody.innerHTML = `
-        <img src="${project.image}" alt="${t(project, 'title')}" class="modal-image">
+        <img src="${project.image}" alt="${t(project, 'title')}" class="modal-image" onerror="${IMG_ERROR_HANDLER}">
         <h2 class="modal-title">${t(project, 'title')}</h2>
         <div class="modal-tech-list">
             ${project.technologies.map(tech => `<span class="tech-tag">${tech}</span>`).join('')}
         </div>
         <p class="modal-desc">${t(project, 'longDescription')}</p>
-        
+
         <div class="features-list">
             <h3>${ui.modal_key_features}</h3>
             <ul>
@@ -277,10 +285,7 @@ function openProjectModal(projectId) {
             </ul>
         </div>
 
-        <div class="modal-footer">
-            <a href="${project.demoUrl}" target="_blank" class="btn btn-primary"><i class="fas fa-external-link-alt"></i> Live Demo</a>
-            <a href="${project.githubUrl}" target="_blank" class="btn btn-outline"><i class="fab fa-github"></i> GitHub</a>
-        </div>
+        ${(demoBtn || githubBtn) ? `<div class="modal-footer">${demoBtn}${githubBtn}</div>` : ''}
     `;
 
     projectModal.style.display = "block";

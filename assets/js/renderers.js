@@ -4,8 +4,9 @@
 
 async function renderContent() {
     if (!portfolioData) return;
-    renderUI(portfolioData.ui);
-    renderProfile(portfolioData.profile);
+    document.documentElement.lang = currentLang;
+    renderUI(localize(portfolioData.ui));
+    renderProfile(localize(portfolioData.profile));
     renderSkills(portfolioData.skills);
     renderExperience(portfolioData.experience);
     renderEducation(portfolioData.education);
@@ -104,7 +105,7 @@ function renderProfile(profile) {
     document.getElementById('info-phone').textContent = profile.phone;
 
     if (document.getElementById('info-availability')) document.getElementById('info-availability').textContent = profile.availability;
-    if (document.getElementById('info-experience')) document.getElementById('info-experience').textContent = `${profile.experience_years} Years`;
+    if (document.getElementById('info-experience')) document.getElementById('info-experience').textContent = `${profile.experience_years} ${t(portfolioData.ui, 'years_label')}`;
     if (document.getElementById('info-work-mode')) document.getElementById('info-work-mode').textContent = profile.work_mode;
 
     document.getElementById('footer-name').textContent = profile.name;
@@ -131,7 +132,7 @@ function renderLanguages(languages) {
     const languagesHTML = languages.map(lang => `
         <div class="language-item">
             <span class="language-name">${lang.name}</span>
-            <span class="language-level">${lang.level}</span>
+            <span class="language-level">${t(lang, 'level')}</span>
         </div>
     `).join('');
     languagesContainer.innerHTML = languagesHTML;
@@ -216,7 +217,7 @@ function renderEducation(education) {
                 <div class="timeline-period">${t(edu, 'period')}</div>
                 <h3 class="timeline-position">${t(edu, 'degree')}</h3>
                 <div class="timeline-company">${t(edu, 'institution')}</div>
-                ${edu.gpa ? `<div class="timeline-description">GPA: ${edu.gpa}</div>` : ''}
+                ${edu.gpa ? `<div class="timeline-description">${t(portfolioData.ui, 'gpa_label')}: ${edu.gpa}</div>` : ''}
                 <ul class="timeline-achievements">
                     ${(t(edu, 'achievements') || []).map(achievement => `<li>${achievement}</li>`).join('')}
                 </ul>
@@ -243,21 +244,26 @@ function renderCertificates(certificates) {
 
 function renderPortfolio(portfolio) {
     const portfolioContainer = document.getElementById('portfolio-grid');
-    const ui = portfolioData.ui;
-    const portfolioHTML = portfolio.map(project => `
-        <div class="portfolio-item" 
+    const ui = localize(portfolioData.ui);
+    const portfolioHTML = portfolio.map(project => {
+        // Only show the demo link when a URL exists (avoids links that point back to this page)
+        const demoLink = project.demoUrl
+            ? `<a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="portfolio-link" title="${ui.btn_view_demo}">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>`
+            : '';
+        return `
+        <div class="portfolio-item"
              data-id="${project.id}"
              data-category="${project.featured ? 'featured' : 'regular'} ${getCategoryFromTech(project.technologies)}">
-            ${project.featured ? '<div class="featured-badge">Featured</div>' : ''}
+            ${project.featured ? `<div class="featured-badge">${ui.featured_label}</div>` : ''}
             <div class="portfolio-image">
-                <img src="${project.image}" alt="${t(project, 'title')}">
+                <img src="${project.image}" alt="${t(project, 'title')}" onerror="${IMG_ERROR_HANDLER}">
                 <div class="portfolio-overlay">
                     <button class="portfolio-link view-details-btn" title="${ui.btn_details}">
                         <i class="fas fa-search-plus"></i>
                     </button>
-                    <a href="${project.demoUrl}" target="_blank" rel="noopener noreferrer" class="portfolio-link" title="View Demo">
-                        <i class="fas fa-external-link-alt"></i>
-                    </a>
+                    ${demoLink}
                 </div>
             </div>
             <div class="portfolio-content">
@@ -268,8 +274,8 @@ function renderPortfolio(portfolio) {
                     ${project.technologies.length > 3 ? `<span class="tech-tag">+${project.technologies.length - 3}</span>` : ''}
                 </div>
             </div>
-        </div>
-    `).join('');
+        </div>`;
+    }).join('');
     portfolioContainer.innerHTML = portfolioHTML;
 
     // Add event listeners for details buttons

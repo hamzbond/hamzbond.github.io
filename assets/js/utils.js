@@ -9,6 +9,20 @@ function t(obj, key) {
     return obj[localizedKey] !== undefined ? obj[localizedKey] : (obj[key] !== undefined ? obj[key] : '');
 }
 
+// Image fallback used when a portfolio image file is missing
+const IMG_FALLBACK_SRC = 'assets/images/portfolio/placeholder.svg';
+const IMG_ERROR_HANDLER = `this.onerror=null;this.src='${IMG_FALLBACK_SRC}';`;
+
+// Returns a copy of obj with every translatable key (key_en / key_id) resolved for the current language
+function localize(obj) {
+    const result = {};
+    Object.keys(obj || {}).forEach(key => {
+        if (/_(en|id)$/.test(key)) return;
+        result[key] = t(obj, key);
+    });
+    return result;
+}
+
 function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification ${type}`;

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#2A1A15"/>
+      <stop offset="1" stop-color="#1A0F0D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="750" fill="url(#bg)"/>
+  <rect x="40" y="40" width="1120" height="670" rx="24" fill="none" stroke="#D4AF37" stroke-opacity="0.35" stroke-width="3" stroke-dasharray="14 10"/>
+  <g fill="none" stroke="#D4AF37" stroke-width="10" stroke-linecap="round" stroke-linejoin="round" transform="translate(520 240)">
+    <rect x="0" y="0" width="160" height="120" rx="14"/>
+    <circle cx="44" cy="40" r="14"/>
+    <path d="M6 110 L58 62 L92 92 L118 68 L154 104"/>
+  </g>
+  <text x="600" y="462" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="40" font-weight="600" fill="#D4AF37">Preview coming soon</text>
+</svg>
